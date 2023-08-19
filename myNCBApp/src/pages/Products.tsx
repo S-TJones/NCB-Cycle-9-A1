@@ -1,6 +1,12 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonBadge, IonLabel, IonCheckbox, IonNote, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 
+/* Image variables */
+import pencil_pack from '../assets/images/pencil_pack.jpg';
+import small_speaker from '../assets/images/small_speaker.jpg';
+import thumb_drives from '../assets/images/thumb_drives.jpg';
+import water_bottle_mira from '../assets/images/water_bottle_mira.jpg';
+
 const Products: React.FC = () => {
   return (
     <IonPage>
@@ -29,7 +35,7 @@ const Products: React.FC = () => {
         </IonList>
 
         <IonCard>
-            <img src="pencil-pack.jpg" alt="Product 1" />
+            <img src={pencil_pack} alt="Product 1" />
             <IonCardHeader>
                 <IonCardSubtitle>Stationary</IonCardSubtitle>
                 <IonCardTitle>Pack of Pencils 1</IonCardTitle>
@@ -39,7 +45,7 @@ const Products: React.FC = () => {
             </IonCardContent>
         </IonCard>
         <IonCard>
-            <img src="small-speaker.jpg" alt="Product 2" />
+            <img src={small_speaker} alt="Product 2" />
             <IonCardHeader>
                 <IonCardSubtitle>Tech</IonCardSubtitle>
                 <IonCardTitle>Small Speaker</IonCardTitle>
@@ -49,7 +55,7 @@ const Products: React.FC = () => {
             </IonCardContent>
         </IonCard>
         <IonCard>
-            <img src="thumb-drives.jpg" alt="Product 3" />
+            <img src={thumb_drives} alt="Product 3" />
             <IonCardHeader>
                 <IonCardSubtitle>Tech</IonCardSubtitle>
                 <IonCardTitle>Thumb Drive</IonCardTitle>
@@ -59,7 +65,7 @@ const Products: React.FC = () => {
             </IonCardContent>
         </IonCard>
         <IonCard>
-            <img src="water-bottle-mira.jpg" alt="Product 4" />
+            <img src={water_bottle_mira} alt="Product 4" />
             <IonCardHeader>
                 <IonCardSubtitle>Bottles</IonCardSubtitle>
                 <IonCardTitle>Water Bottle</IonCardTitle>
